@@ -17,6 +17,12 @@ Environment
 -----------
 The only requirement for this tutorial is computer with Linux. Examples will run from several windows of Command Line Interface. There are many other CANopen tools available for configuration and working with CANopen network. Some of them have GUI, some can import electronic data sheet of particular device, etc. Here we will use CLI tools from CANopenNode for most basic demonstration of CANopen principles.
 
+WSL2 (Windows Subsystem for Linux) is recommended when running Linux on Windows, but its kernel needs to be updated 
+to support a virtual CAN interface. Follow the gist at 
+https://gist.github.com/manavortex/cdaf9540784808e5848cbec744d49a19
+but in step 6, press instead “/”, type CAN_DEV, and select the number shown in “Location” (e.g., 1)
+to jump directly to “CAN Device Drivers”.
+
 ### CANopen devices
 Two CANopen devices will be used, both based on CANopenNode:
 1. `canopend` from CANopenLinux repository will be a commander device with CANopen ASCII command interface. It will run with CANopen NodeId = 1. Application `cocomm` will be used for sending commands to `canopend`. For information on compiling and installing those two applications see CANopenLinux repository.
