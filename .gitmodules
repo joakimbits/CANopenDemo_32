@@ -1,6 +1,6 @@
 [submodule "CANopenLinux"]
 	path = CANopenLinux
-	url = https://github.com/CANopenNode/CANopenLinux.git
+	url = https://github.com/joakimbits/CANopenLinux.git
 [submodule "test/libs/bats-core"]
 	path = test/libs/bats-core
 	url = https://github.com/bats-core/bats-core.git
